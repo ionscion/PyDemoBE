@@ -27,8 +27,6 @@ def create_app():
     from routes.items import items_bp
     from routes.users import users_bp
 
-    # app.register_blueprint(items_bp, url_prefix="/items")
-    # app.register_blueprint(users_bp, url_prefix="/users")
     app.register_blueprint(items_bp, url_prefix="/api/items")
     app.register_blueprint(users_bp, url_prefix="/api/users")
 
